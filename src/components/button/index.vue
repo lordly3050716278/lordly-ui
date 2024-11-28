@@ -15,7 +15,7 @@ const props = defineProps({
         default: 'default',
         validator(val) {
             if (types.includes(val)) return true
-            console.warn(`[Warning] Invalid prop: type must be one of [${types.join(', ')}]. You passed: "${val}".`)
+            console.warn(`[Warning] LyButton Invalid prop: type must be one of [${types}]. You passed: "${val}".`)
             return false
         }
     },
@@ -24,7 +24,7 @@ const props = defineProps({
         default: 'normal',
         validator(val) {
             if (sizes.includes(val)) return true
-            console.warn(`[Warning] Invalid prop: size must be one of [${sizes.join(', ')}]. You passed: "${val}".`)
+            console.warn(`[Warning] LyButton Invalid prop: size must be one of [${sizes}]. You passed: "${val}".`)
             return false
         }
     },
