@@ -1,5 +1,7 @@
 // button
 import LyButton from './components/button'
+// checkbox
+import LyCheckbox from './components/checkbox'
 
 // loading 指令
 import VLoading from './directives/loading'
@@ -14,6 +16,7 @@ export default {
     install(app) {
         // 注册全局组件
         app.component('LyButton', LyButton)
+        app.component('LyCheckbox', LyCheckbox)
 
         // 注册 loading 指令
         app.directive('loading', VLoading)

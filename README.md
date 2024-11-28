@@ -7,6 +7,7 @@ lordly-ui/
 ├── src/                              # 源代码
 |   ├── components/                   # 组件
 |   |   ├── button/                   # button 组件
+|   |   ├── checkbox/                 # checkbox 组件
 |   ├── directives/                   # 指令
 |   |   └── loading/                  # loading 指令
 |   ├── utils/                        # 工具
