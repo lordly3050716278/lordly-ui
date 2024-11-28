@@ -9,6 +9,7 @@ lordly-ui/
 |   ├── directives/                   # 指令
 |   ├── utils/                        # 工具
 |   |   ├── alert-message/            # 提示消息
+|   |   └── click-ripple/             # 点击反馈
 |   └── index.js                      # 入口文件
 ├── package.json                      # 项目配置
 └── README.md                         # 说明文档
