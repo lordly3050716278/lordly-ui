@@ -6,10 +6,11 @@
 lordly-ui/
 ├── src/                              # 源代码
 |   ├── components/                   # 组件
+|   |   ├── button/                   # button 组件
 |   ├── directives/                   # 指令
 |   |   └── loading/                  # loading 指令
 |   ├── utils/                        # 工具
-|   |   ├── alert-message/            # 提示消息
+|   |   ├── alert-message/            # alertMessage 提示消息
 |   |   └── click-ripple/             # 点击反馈
 |   └── index.js                      # 入口文件
 ├── package.json                      # 项目配置

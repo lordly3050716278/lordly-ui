@@ -1,28 +1,37 @@
+// button
+import LyButton from './components/button'
+
+// loading 指令
+import VLoading from './directives/loading'
+
 // 提示信息
 import alertMessage from './utils/alert-message'
 import { AlertMessage } from './utils/alert-message'
 // 点击反馈
 import startClickRipple from './utils/click-ripple'
 
-
-// loading 指令
-import VLoading from './directives/loading'
-
 export default {
     install(app) {
-        // 开启点击反馈
-        startClickRipple()
+        // 注册全局组件
+        app.component('LyButton', LyButton)
 
         // 注册 loading 指令
         app.directive('loading', VLoading)
+
+        // 开启点击反馈
+        startClickRipple()
     }
 }
 
 export {
+    // 组件...
+    LyButton,
+
+    // 指令...
+    VLoading,
+
     // 工具...
     alertMessage,
     AlertMessage,
-    startClickRipple,
-    // 指令...
-    VLoading
+    startClickRipple
 }
