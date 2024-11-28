@@ -102,6 +102,6 @@ const sizeStyles = {
     huge: new SizeStyle('18px', '8px 16px')
 }
 
-export { types, sizes, defaultTypeStyles, plainTypeStyles, sizeStyles }
-
 export { default } from './index.vue'
+
+export { types, sizes, defaultTypeStyles, plainTypeStyles, sizeStyles }
