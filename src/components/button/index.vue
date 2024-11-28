@@ -7,7 +7,7 @@
 
 <script setup>
 import { computed, ref } from 'vue'
-import { types, sizes, defaultTypeStyles, plainTypeStyles, sizeStyles } from '.'
+import { types, sizes, typeStyles, plainStyles, sizeStyles } from '.'
 
 const props = defineProps({
     type: {
@@ -52,11 +52,10 @@ const classNames = computed(() => [
     }
 ])
 
-const typeStyles = computed(() => props['plain'] ? plainTypeStyles : defaultTypeStyles)
 const buttonStyle = computed(() => {
     const state = props['disabled'] ? 'disabled' : isActived.value ? 'active' : isHovering.value ? 'hover' : 'default'
-
-    return { ...typeStyles.value[props['type']][state], ...sizeStyles[props['size']] }
+    const styles = props['plain'] ? plainStyles : typeStyles
+    return { ...styles[props['type']][state], ...sizeStyles[props['size']] }
 })
 
 const isHovering = ref(false)
