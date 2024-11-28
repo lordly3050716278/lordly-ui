@@ -1,0 +1,24 @@
+{
+  "name": "lordly-ui",
+  "version": "1.0.0",
+  "description": "lordly ui components",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordly3050716278/lordly-ui.git"
+  },
+  "keywords": [
+    "lordly",
+    "ui",
+    "components"
+  ],
+  "author": "lordly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lordly3050716278/lordly-ui/issues"
+  },
+  "homepage": "https://github.com/lordly3050716278/lordly-ui#readme"
+}
